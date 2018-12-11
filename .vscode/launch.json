@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+         {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost/4200",  //if your server works with a different port (like 8080) you need to set : "http://localhost:8080/my_project/",
+            
+            "runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222",
+                "--user-data-dir=remote-profile"
+            ],
+            "port": 9222,
+            "webRoot": "${workspaceFolder}"
+         }
+    ]
+}
